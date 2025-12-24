@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone</title>
+    <style>
+        /* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fc8019; /* Swiggy orange */
+    color: white;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .search-cart {
+    display: flex;
+    align-items: center;
+}
+
+header input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 15px;
+    width: 250px;
+}
+
+header .cart {
+    font-weight: bold;
+}
+
+/* Navigation / Categories */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+}
+
+.category {
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.category:hover {
+    background-color: #fc8019;
+    color: white;
+}
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('https://via.placeholder.com/1200x300');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 32px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Food Cards */
+.food-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 10px 0 5px 0;
+}
+
+.card p {
+    color: #fc8019;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Swiggy</div>
+        <div class="search-cart">
+            <input type="text" placeholder="Search for restaurants or food">
+            <div class="cart">Cart 🛒</div>
+        </div>
+    </header>
+
+    <!-- Navigation / Categories -->
+    <nav>
+        <div class="category">Pizza</div>
+        <div class="category">Burger</div>
+        <div class="category">Sushi</div>
+        <div class="category">Desserts</div>
+        <div class="category">Beverages</div>
+    </nav>
+
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Delicious food delivered to your doorstep!</h1>
+    </section>
+
+    <!-- Food Cards -->
+    <section class="food-cards">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Food 1">
+            <h3>Pizza Margherita</h3>
+            <p>₹250</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Food 2">
+            <h3>Cheeseburger</h3>
+            <p>₹150</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Food 3">
+            <h3>Sushi Platter</h3>
+            <p>₹400</p>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Food 4">
+            <h3>Chocolate Cake</h3>
+            <p>₹200</p>
+        </div>
+    </section>
+</body>
+</html>
